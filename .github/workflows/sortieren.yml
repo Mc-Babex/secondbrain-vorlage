@@ -1,0 +1,16 @@
+name: Sortieren
+
+on:
+  repository_dispatch:
+    types: [sortieren]
+
+jobs:
+  sortieren:
+    permissions:
+      contents: write
+    uses: Mc-Babex/secondbrain/.github/workflows/sortieren.yml@stable
+    with:
+      request-id: ${{ github.event.client_payload.requestId }}
+    secrets:
+      ROUTINE_FIRE_URL: ${{ secrets.ROUTINE_FIRE_URL }}
+      ROUTINE_FIRE_TOKEN: ${{ secrets.ROUTINE_FIRE_TOKEN }}

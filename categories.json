@@ -1,0 +1,26 @@
+{
+  "categories": [
+    {
+      "id": "privat",
+      "name": "Privat",
+      "kind": "normal",
+      "order": 1,
+      "description": "Alles Persönliche: Haushalt, Arzttermine, Behörden, Freizeit …"
+    },
+    {
+      "id": "arbeit",
+      "name": "Arbeit",
+      "kind": "normal",
+      "order": 2,
+      "description": "Alles zu Beruf, Job oder Ausbildung"
+    },
+    { "id": "einkauf", "name": "Einkaufsliste", "kind": "einkauf", "order": 3, "description": "" },
+    {
+      "id": "erledigt",
+      "name": "Erledigt",
+      "kind": "archiv",
+      "order": 4,
+      "description": "Archiv für abgehakte Aufgaben"
+    }
+  ]
+}
